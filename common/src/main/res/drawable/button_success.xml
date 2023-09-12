@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Yogi Dewansyah
+  ~ URL: https://github.com/yodeput
+  ~ Copyright (c) 2022 . All rights reserved.
+  ~ Last modified 10/25/21, 9:46 PM
+  ~
+  -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false"  android:drawable="@drawable/button_success_disable"/>
+    <item android:state_enabled="true" android:drawable="@drawable/button_success_enable"/> <!-- idle state -->
+</selector>

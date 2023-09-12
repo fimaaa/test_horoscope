@@ -1,0 +1,10 @@
+<resources>
+    <string name="default_notification_channel_id" translatable="false">order</string>
+    <string name="you_got_the_task">You got the Task</string>
+    <string name="intensif">Intensif</string>
+    <string name="total_distance">Total Distance</string>
+    <string name="receiver_multidrop_title">Send to %1$d Location</string>
+    <string name="received_in">Received in</string>
+    <string name="accept_task">Accept (%1$d)</string>
+    <string name="decline_task">Order Declined : \n %1$s</string>
+</resources>

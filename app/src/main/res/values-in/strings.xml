@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="you_got_the_task">Kamu dapat tugas!</string>
+    <string name="intensif">Intensif</string>
+    <string name="total_distance">Total Jarak</string>
+    <string name="receiver_multidrop_title">Kirim ke %1$d Lokasi</string>
+    <string name="received_in">Jemput di</string>
+    <string name="accept_task">Terima (%1$d)</string>
+    <string name="decline_task">Pesanan ditolak : \n %1$s</string>
+</resources>

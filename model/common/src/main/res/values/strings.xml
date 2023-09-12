@@ -1,0 +1,38 @@
+<resources>
+    <string name="error_default">Something is Wrong</string>
+    <string name="error_search_notfound">%1$s Not Found</string>
+    <string name="error_unauthorized">Session Timeout</string>
+
+    <string name="success_default">Success</string>
+
+    <string name="loading_default">Loading...</string>
+
+    <string name="login">Log In</string>
+    <string name="retry">Retry</string>
+    <string name="link_here">Link Here</string>
+
+    <string name="tab_onprogress">OnProgress</string>
+    <string name="tab_done">Completed</string>
+
+    <string name="format_price">Rp%1$s</string>
+
+    <!-- Status Delivery -->
+    <string name="status_ccs_display">Package Canceled</string>
+    <string name="status_rpc_display">Request To Pickup</string>
+    <string name="status_asg_display">Assigned To FirstMile</string>
+    <string name="status_rtp_display">Ready To Pickup</string>
+    <string name="status_col_display">Courier On Pickup Location</string>
+    <string name="status_rap_display">Reattemp Pickup</string>
+    <string name="status_papv_display">Package Approved</string>
+    <string name="status_prjl_display">Request Rejected</string>
+    <string name="status_asglm_display">Assigned To LastMile</string>
+    <string name="status_pod_display">Package On Delivery To Receiver</string>
+    <string name="status_cod_display">Courier On Destination</string>
+    <string name="status_pdo_display">Package DropOff</string>
+    <string name="status_und_display">Undelivered</string>
+    <string name="status_undcortn_display">Courier in Return Place</string>
+    <string name="status_undrtn_display">Package Return</string>
+    <string name="status_asgrtn_display">Assigned To Return</string>
+    <string name="status_cortn_display">Kurir sedang ditempat pengembalian</string>
+    <string name="status_rtn_display">Package Return</string>
+</resources>
