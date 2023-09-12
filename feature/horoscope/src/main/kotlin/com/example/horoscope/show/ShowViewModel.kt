@@ -50,7 +50,7 @@ class ShowViewModel @Inject constructor(
         val currentDate = Calendar.getInstance()
 
         var years = currentDate.get(Calendar.YEAR) - selectedDate.get(Calendar.YEAR)
-        val months = currentDate.get(Calendar.MONTH) - selectedDate.get(Calendar.MONTH)
+        val months = (currentDate.get(Calendar.MONTH) + 1) - selectedDate.get(Calendar.MONTH)
         val days = currentDate.get(Calendar.DAY_OF_MONTH) - selectedDate.get(Calendar.DAY_OF_MONTH)
 
         if (days < 0) {

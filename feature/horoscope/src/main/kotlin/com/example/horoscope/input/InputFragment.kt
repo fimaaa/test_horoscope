@@ -63,18 +63,19 @@ class InputFragment : BaseBindingFragment<FragmentHoroscopeInputBinding, InputVi
             { _, selectedYear, selectedMonth, selectedDay ->
                 // Handle the selected date here
                 val selectedDate = Calendar.getInstance()
-                selectedDate.set(selectedYear, selectedMonth + 1, selectedDay)
+                selectedDate.set(selectedYear, selectedMonth, selectedDay)
 
                 if (selectedDate.after(currentDate)) {
                     // The selected date is in the future
                     // You can handle this situation here, for example, by showing an error message
                     // or resetting the date to the current date
-                    val errorMessage = "Please select a date in the past or today."
+                    val errorMessage = "Please select a date in the past"
                     requireContext().showSnackBar(binding.root, errorMessage, Toast_Error)
                     // Reset the date to the current date
                     viewModel.setDate(null)
                 } else {
                     // The selected date is valid
+                    selectedDate.set(selectedYear, selectedMonth + 1, selectedDay)
                     viewModel.setDate(selectedDate.timeInMillis)
                 }
             },

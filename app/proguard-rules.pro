@@ -40,7 +40,7 @@
 -keep class androidx.databinding.** { *; }
 
 # Keep generated data binding classes
--keep class com.baseapp.handlesolution.databinding.** { *; }
+-keep class com.baseapp.horoscope.databinding.** { *; }
 
 ### ###
 -keep class * extends androidx.lifecycle.ViewModel {
