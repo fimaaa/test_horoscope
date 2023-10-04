@@ -2,13 +2,26 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main_nav"
-    app:startDestination="@id/horoscope_module"
+    app:startDestination="@id/sort_module"
     >
     <include app:graph = "@navigation/horoscope_module"/>
 
     <action
         android:id="@+id/navigate_to_horoscope"
         app:destination="@id/horoscope_module"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:launchSingleTop="true"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right"
+        app:popUpTo="@id/main_nav"
+        app:popUpToInclusive="true" />
+
+    <include app:graph = "@navigation/sort_module"/>
+
+    <action
+        android:id="@+id/navigate_to_sort"
+        app:destination="@id/sort_module"
         app:enterAnim="@anim/slide_in_right"
         app:exitAnim="@anim/slide_out_left"
         app:launchSingleTop="true"

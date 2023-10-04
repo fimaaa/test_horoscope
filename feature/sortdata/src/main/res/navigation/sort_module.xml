@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sort_module"
+    app:startDestination="@id/inputFragment">
+    <fragment
+        android:id="@+id/inputFragment"
+        android:name="input.InputFragment"
+        android:label="InputFragment"
+        tools:layout="@layout/fragment_input"
+        >
+        <action
+            android:id="@+id/action_inputFragment_to_showFragment"
+            app:destination="@id/showFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/showFragment"
+        android:name="show.ShowFragment"
+        android:label="ShowFragment"
+        tools:layout="@layout/fragment_show"
+        >
+        <argument
+            android:name="listNumber"
+            app:argType="integer[]" />
+    </fragment>
+
+</navigation>

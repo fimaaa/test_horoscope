@@ -7,6 +7,7 @@ object Modules {
     const val repository = ":repository"
     const val featureHoroscope = ":feature:horoscope"
     const val modelHoroscope = ":model:horoscope"
+    const val featureSort = ":feature:sortdata"
 }
 
 object Release {

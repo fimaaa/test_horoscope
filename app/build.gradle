@@ -129,6 +129,7 @@ dependencies {
     implementation project(Modules.repository)
     implementation project(Modules.local)
     implementation project(Modules.featureHoroscope)
+    implementation project(Modules.featureSort)
 
     // Networking
     // Retrofit + GSON

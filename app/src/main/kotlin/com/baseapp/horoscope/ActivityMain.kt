@@ -63,11 +63,11 @@ class ActivityMain : BaseBindingActivity<ActivityMainBinding>() {
     }
 
     override fun onInitialization() {
-        onUnAuthorized = {
-            findNavController(R.id.nav_host_fragment).navigate(
-                MainNavDirections.navigateToHoroscope()
-            )
-        }
+//        onUnAuthorized = {
+//            findNavController(R.id.nav_host_fragment).navigate(
+//                MainNavDirections.navigateToHoroscope()
+//            )
+//        }
 
         changeStatusBarColor(commonR.color.color_primary)
 
