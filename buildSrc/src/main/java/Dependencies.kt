@@ -8,6 +8,8 @@ object Modules {
     const val featureHoroscope = ":feature:horoscope"
     const val modelHoroscope = ":model:horoscope"
     const val featureSort = ":feature:sortdata"
+    const val featurePokemon = ":feature:pokemon"
+    const val modelPokemon = ":model:pokemon"
 }
 
 object Release {
@@ -19,7 +21,7 @@ object Release {
     const val minSDK = 21
     const val maxSDK = 33
 
-    const val appName = "Test Horoscope"
+    const val appName = "Pokedex"
 }
 
 object Versions {

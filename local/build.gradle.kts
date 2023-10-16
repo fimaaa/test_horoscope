@@ -11,6 +11,7 @@ android {
 dependencies {
     implementation(project(Modules.modelCommon))
     implementation(project(Modules.modelHoroscope))
+    implementation(project(Modules.modelPokemon))
 
     implementation(LibraryAndroid.gson)
 

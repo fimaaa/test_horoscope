@@ -3,4 +3,5 @@
     <item name="nav_host_fragment" type="id"/>
     <item name="horoscope_module" type="id"/>
     <item name="sort_module" type="id" />
+    <item name="pokemon_module" type="id" />
 </resources>

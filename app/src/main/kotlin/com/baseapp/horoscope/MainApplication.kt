@@ -8,6 +8,7 @@ import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.ProcessLifecycleOwner
 import cat.ereza.customactivityoncrash.config.CaocConfig
 import com.baseapp.common.base.BaseApplication
+import com.example.network.di.ExternalData
 import dagger.hilt.android.HiltAndroidApp
 import java.util.Locale
 import javax.inject.Inject
@@ -21,6 +22,7 @@ class MainApplication : BaseApplication(), LifecycleEventObserver {
     lateinit var caocConfig: CaocConfig.Builder
     override fun onCreate() {
         super.onCreate()
+        ExternalData
         caocConfig.apply()
         ProcessLifecycleOwner.get().lifecycle.addObserver(this)
     }

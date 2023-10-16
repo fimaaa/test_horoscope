@@ -12,9 +12,10 @@ android {
 dependencies {
     implementation(project(Modules.common))
     implementation(project(Modules.modelCommon))
-//    implementation(project(Modules.network))
+    implementation(project(Modules.network))
     implementation(project(Modules.local))
     implementation(project(Modules.modelHoroscope))
+    implementation(project(Modules.modelPokemon))
 
     implementation(LibraryAndroid.gson)
 

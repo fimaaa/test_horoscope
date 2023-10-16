@@ -127,9 +127,11 @@ dependencies {
     implementation project(Modules.modelCommon)
     implementation project(Modules.navigation)
     implementation project(Modules.repository)
+    implementation project(Modules.network)
     implementation project(Modules.local)
     implementation project(Modules.featureHoroscope)
     implementation project(Modules.featureSort)
+    implementation(project(Modules.featurePokemon))
 
     // Networking
     // Retrofit + GSON

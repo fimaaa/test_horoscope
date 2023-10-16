@@ -21,6 +21,7 @@ import com.baseapp.navigation.NavigationCommand
 import com.baseapp.common.R as commonR
 import com.baseapp.navigation.R as navR
 import com.example.horoscope.R as horoscopeR
+import com.example.pokemon.R as pokemonR
 
 class ActivityMain : BaseBindingActivity<ActivityMainBinding>() {
     private lateinit var parentController: NavController
@@ -28,7 +29,8 @@ class ActivityMain : BaseBindingActivity<ActivityMainBinding>() {
     private val mAppBarConfiguration by lazy {
         AppBarConfiguration(
             setOf(
-                horoscopeR.id.inputFragment
+                horoscopeR.id.inputFragment,
+                pokemonR.id.listPokemonFragment
             ), // Masukin ID Fragment yang Navigation Icon is Burger Menu,
             binding.drawerLayout
         )
@@ -80,7 +82,7 @@ class ActivityMain : BaseBindingActivity<ActivityMainBinding>() {
         arguments: Bundle?
     ): Boolean {
         return when (destination.id) {
-            horoscopeR.id.inputFragment -> {
+            horoscopeR.id.inputFragment, pokemonR.id.listPokemonFragment, pokemonR.id.splashScreenFragment -> {
                 toolbarVisibility(false)
                 true
             }

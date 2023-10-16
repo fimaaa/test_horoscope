@@ -24,13 +24,16 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Test Horoscope"
+rootProject.name = "Test Pokemon"
 include ':app'
 include ':common'
 include ':navigation'
 include ':model:common'
 include ':repository'
+include ':network'
 include ':local'
 include ':feature:horoscope'
 include ':model:horoscope'
 include ':feature:sortdata'
+include ':feature:pokemon'
+include ':model:pokemon'

@@ -4,6 +4,7 @@ import android.content.Context
 import androidx.room.Room
 import com.baseapp.local.AppDatabase
 import com.baseapp.local.dao.HoroscopeDao
+import com.baseapp.local.dao.PokemonDao
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -27,4 +28,8 @@ object LocalModule {
     @Singleton
     @Provides
     fun provideHoroscopeDao(db: AppDatabase): HoroscopeDao = db.getHoroscopeDao()
+
+    @Singleton
+    @Provides
+    fun providePokemonDao(db: AppDatabase): PokemonDao = db.getPokemonDao()
 }
